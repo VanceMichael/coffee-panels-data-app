@@ -1,0 +1,4 @@
+option,available_day,sessions,subject,cups_required
+R01,10,A|B,R2,2
+R02,10,B,L2,2
+R03,11,B|C,R3,4

@@ -1,0 +1,4 @@
+lot,supplier,grade_expected,kg,available_day,delivery_day
+L1,F1,aroma,480,3,22
+L2,F2,aroma,350,3,18
+L3,F3,balanced,600,4,30

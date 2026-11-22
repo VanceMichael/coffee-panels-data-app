@@ -1,0 +1,5 @@
+order,lot,required_kg,required_by,profile,band,deposit,state
+P1,L1,300,23,aroma,8.5,600,reserved
+P2,L1,250,23,aroma,8.7,0,proposed
+P3,L2,200,20,aroma,8.5,0,proposed
+P4,L3,400,32,balanced,8.1,0,proposed

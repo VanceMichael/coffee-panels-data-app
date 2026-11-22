@@ -1,0 +1,90 @@
+{
+  "tables": {
+    "batches": [
+      "lot",
+      "supplier",
+      "grade_expected",
+      "kg",
+      "available_day",
+      "delivery_day"
+    ],
+    "cups": [
+      "cup",
+      "session",
+      "judge",
+      "blind",
+      "score_version",
+      "aroma",
+      "body",
+      "defect",
+      "observed_day"
+    ],
+    "blind-key": [
+      "blind",
+      "lot",
+      "reference",
+      "state",
+      "updated_day"
+    ],
+    "purchase": [
+      "order",
+      "lot",
+      "required_kg",
+      "required_by",
+      "profile",
+      "band",
+      "deposit",
+      "state"
+    ],
+    "retest": [
+      "option",
+      "available_day",
+      "sessions",
+      "subject",
+      "cups_required"
+    ],
+    "rules": [
+      "profile",
+      "measure",
+      "max_disagreement",
+      "limit",
+      "limit_kind"
+    ],
+    "lab-capacity": [
+      "day",
+      "max_cups"
+    ]
+  },
+  "links": [
+    [
+      "cups",
+      "blind",
+      "blind-key",
+      "blind"
+    ],
+    [
+      "blind-key",
+      "lot",
+      "batches",
+      "lot"
+    ],
+    [
+      "purchase",
+      "lot",
+      "batches",
+      "lot"
+    ],
+    [
+      "purchase",
+      "profile",
+      "rules",
+      "profile"
+    ],
+    [
+      "retest",
+      "available_day",
+      "lab-capacity",
+      "day"
+    ]
+  ]
+}

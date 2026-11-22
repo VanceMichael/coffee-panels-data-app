@@ -1,0 +1,5 @@
+profile,measure,max_disagreement,limit,limit_kind
+aroma,aroma,1.0,8.0,lower
+aroma,defect,0,0,upper
+balanced,body,1.2,8.0,lower
+balanced,defect,0,0,upper
