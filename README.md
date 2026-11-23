@@ -14,3 +14,12 @@ CSV 使用 UTF-8、逗号分隔，无引号与内嵌换行。未提供的字段�
 使用 Node.js 22.23.4，依赖仅为 Node.js 标准库。运行 `npm ci --ignore-scripts --offline` 准备工作区。
 
 运行 `npm run check:materials` 检查合成交接资料的字段与记录引用。运行 `npm test` 检查交接资料的读取和校验。
+
+## 杯测复核工具
+
+在资料校验之上，`tools/cupping/` 提供可重复运行的跨场可比性与采购复核分析：杯次/盲样/实货批身份辨认、共同参照校准图、共享偏差区间、复判撤连影响、报价档判定、定金承诺台账、有限杯次的复测规划与角色视图。完整口径与 CLI 用法见 [`docs/cupping-tool.md`](docs/cupping-tool.md)。
+
+```bash
+npm run analyze                 # 完整分析（不含 events 事件目录）
+node tools/cupping/cli.mjs --help
+```

@@ -8,6 +8,11 @@
   },
   "scripts": {
     "test": "node --test",
-    "check:materials": "node tools/check-materials.mjs"
+    "check:materials": "node tools/check-materials.mjs",
+    "analyze": "node tools/cupping/cli.mjs analyze --data fixtures --events false",
+    "analyze:events": "node tools/cupping/cli.mjs analyze --data fixtures",
+    "view:supplier": "node tools/cupping/cli.mjs view --role supplier --data fixtures --events false",
+    "view:lab": "node tools/cupping/cli.mjs view --role lab --data fixtures --events false",
+    "view:internal": "node tools/cupping/cli.mjs view --role internal --data fixtures --events false"
   }
 }

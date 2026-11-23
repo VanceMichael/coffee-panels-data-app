@@ -1,0 +1,24 @@
+{
+  "configVersion": "cupping-contract-2026.1",
+  "schemaVersion": "report-1",
+  "analysisDay": 12,
+  "intervalZ": 1.645,
+  "displayDecimals": 2,
+  "sharedBiasFloor": 0.08,
+  "countMeasures": ["defect"],
+  "numericMeasures": ["aroma", "body"],
+  "allMeasures": ["aroma", "body", "defect"],
+  "primaryMeasure": {
+    "aroma": "aroma",
+    "balanced": "body"
+  },
+  "variancePrior": {
+    "aroma": { "sigma0": 0.3, "pseudoDf": 2 },
+    "body": { "sigma0": 0.3, "pseudoDf": 2 }
+  },
+  "orderStates": {
+    "locking": ["reserved", "issued"],
+    "released": ["cancelled"],
+    "open": ["proposed"]
+  }
+}
